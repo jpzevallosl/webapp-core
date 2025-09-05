@@ -1,0 +1,27 @@
+{
+  "name": "webapp-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Infraestructura modular para apps web en AWS con CDK (TS): VPC, ALB, ECS Fargate, RDS, S3+CloudFront, WAF, Cognito, ECR, Endpoints.",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "synth": "npx cdk synth",
+    "deploy": "npx cdk deploy",
+    "diff": "npx cdk diff",
+    "destroy": "npx cdk destroy",
+    "bootstrap": "npx cdk bootstrap",
+    "cdk": "npx cdk"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.137.0",
+    "constructs": "^10.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
+
